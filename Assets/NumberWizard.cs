@@ -2,9 +2,9 @@
 
 public class NumberWizard : MonoBehaviour {
 
-    int min = 1;
-    int max = 1000;
-    int guess = 500;
+    int min;
+    int max;
+    int guess;
 
     // Start is called before the first frame update
     void Start() {
