@@ -12,6 +12,9 @@ public class NumberWizard : MonoBehaviour {
     }
 
     void StartGame() {
+        max = 1000;
+        min = 1;
+        guess = 500;
         Debug.Log("Welcome to Number Wizard");
         Debug.Log("Pick a number!");
         Debug.Log("The highest number you can pick is: " + max);
@@ -32,7 +35,8 @@ public class NumberWizard : MonoBehaviour {
             NextGuess();
         }
          else if (Input.GetKeyDown(KeyCode.Return)) {
-            Debug.Log("Enter key was pressed.");
+            Debug.Log("Restart Game");
+            StartGame();
         }
 
     }
